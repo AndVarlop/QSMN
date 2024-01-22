@@ -1,4 +1,4 @@
-from tkinter import font, messagebox
+from tkinter import messagebox
 from tkinter import *
 import random
 
@@ -22,17 +22,16 @@ root.iconbitmap('icono.ico')
 root.configure(background='#D29BFD')
 root.title('Respondeme :3')
 
-Label_0 = Label(root, text='¿Quieres ser mi novia?', bg='#D29BFD', fg='black', width=0, font=("BubbleGum", 30))
-Label_0.place(x=90, y=60)
+Label_0 = Label(root, text='¿Quieres ser mi novia?', bg='#D29BFD', fg='black', width=0, font=("Times New Roman", 40))
+Label_0.place(x=55, y=60)
 
-yes = Button(root, text="SI", width=5, height=1, font=("BubbleGum", 30), bg='#FF4141', fg='#D29BFD', command=obvio)
+yes = Button(root, text="SI", width=5, height=1, font=("Times New Roman", 30), bg='black', fg='white', command=obvio)
 yes.place(x=100, y=220)
 
-no = Button(root, text="NO", width=5, height=1, font=("BubbleGum", 30), bg='#FF4141', fg='#D29BFD')
+no = Button(root, text="NO", width=5, height=1, font=("Times New Roman", 30), bg='black', fg='white')
 no.place(x=350, y=220)
 
 no.bind("<Enter>", Button_hover)
 no.bind("<Leave>", exit_)
 
 root.mainloop()
-
